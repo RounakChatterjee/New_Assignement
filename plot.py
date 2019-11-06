@@ -29,7 +29,7 @@ wavno_data = np.loadtxt("C:/Users/ROUNAK/Desktop/study/recent assignments/Pendin
 Irradiance_data = np.loadtxt("C:/Users/ROUNAK/Desktop/study/recent assignments/Pending/python codes/NASA_data.txt",dtype = 'float',comments = '#',delimiter = None,usecols = (1))
 
 plt.scatter(wavno_data , Irradiance_data, color = 'red', label='NASA Data', s = 12.0)
-plt.plot(wavno, Bnewbar2_725K(100.0*wavno),label='Planck\'s Law at T = 2.725K', color = 'green')
+plt.plot(wavno, Bnewbar2_725K(100.0*wavno),label='Planck\'s Law at T = 2.725K', color = 'green') # 100.0 multiplied to bring wave number to S.I units
 plt.legend(loc = 'upper right', frameon = True, shadow = True)
 plt.title("Comparing CMB background with 2.725K BB")
 plt.grid(True)
