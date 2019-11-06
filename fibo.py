@@ -1,3 +1,6 @@
+'''
+This code prints first 10 fibbonaci numbers!
+'''
 a = 0
 b = 1
 c = 0
