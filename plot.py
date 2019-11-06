@@ -26,7 +26,7 @@ This section finds the wavenumber at which the BB peaks
 '''
 
 I = Bnewbar2_725K(100*wavno)
-maxval = "The peak value at "+str(wavno[np.where(I == np.amax(I))[0]])
+maxval = "The peak value at "+str(wavno[np.where(I == np.amax(I))[0]]) # np.amax() is the function that does the job
 
 '''
 This section plots the data from NASA
@@ -38,7 +38,7 @@ plt.scatter(wavno_data , Irradiance_data, color = 'red', label='NASA Data', s = 
 plt.plot(wavno, Bnewbar2_725K(100.0*wavno),label='Planck\'s Law at T = 2.725K', color = 'green')
 plt.legend(loc = 'upper right', frameon = True, shadow = True)
 plt.title("Comparing CMB background with 2.725K BB")
-plt.text(12.5,200,maxval)
+plt.text(12.5,200,maxval) #this section puts it in the graph
 plt.grid(True)
 plt.show()
 
