@@ -1,3 +1,6 @@
+'''
+Modified way to get the powers of 2
+'''
 L = [1]
 for i in range(1,7):
 	L.append(2**i)
