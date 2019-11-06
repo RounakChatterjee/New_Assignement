@@ -1,3 +1,7 @@
+'''
+This program finds the first 100 fibonacci numbers and times the progam to get time taken
+'''
+import timeit as t
 def fibo(n):
 	b = 1
 	a = 0
@@ -10,3 +14,4 @@ def fibo(n):
 		b = c
 		c = 0
 fibo(100)
+print("\n The time taken by the program to run =  ",t.timeit())
