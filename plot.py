@@ -27,6 +27,7 @@ This section finds the wavenumber at which the BB peaks
 
 I = Bnewbar2_725K(100*wavno)
 maxval = "The peak value at "+str(wavno[np.where(I == np.amax(I))[0]]) # np.amax() is the function that does the job
+# The wave number for which max intensity is found corresponds to microwave frequencies
 
 '''
 This section plots the data from NASA
